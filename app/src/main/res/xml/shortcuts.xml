@@ -1,0 +1,42 @@
+<?xml version="1.0" encoding="utf-8"?>
+<shorcuts xmlns:android="http://schemas.android.com/apk/res/android">
+
+    <shortcut
+        android:shortcutId="first"
+        android:enabled="true"
+        android:icon="@drawable/calculator_icon"
+        android:shortcutShortLabel="@string/first_short"
+        android:shortcutLongLabel="@string/first_long">
+        <intent
+            android:action="android.intent.action.VIEW"
+            android:targetPackage="com.miui.calculator"
+            android:targetClass="com.miui.calculator.cal.CalculatorActivity"/>
+        <categories android:name="android.shortcut.conversation"/>
+    </shortcut>
+    <shortcut
+        android:shortcutId="second"
+        android:enabled="true"
+        android:icon="@mipmap/ic_launcher"
+        android:shortcutShortLabel="@string/second_long"
+        android:shortcutLongLabel="@string/second_long">
+        <intent
+            android:action="android.intent.action.VIEW"
+            android:targetPackage="com.tencent.mm"
+            android:targetClass="com.tencent.mm.ui.LauncherUI"/>
+        <categories android:name="android.shortcut.conversation"/>
+    </shortcut>
+    <shortcut
+        android:shortcutId="third"
+        android:enabled="true"
+        android:icon="@drawable/calculator_icon"
+        android:shortcutShortLabel="@string/first_short"
+        android:shortcutLongLabel="@string/third_long">
+        <intent
+            android:action="android.intent.action.MAIN"
+            android:targetPackage="monki.study.calculator"
+            android:targetClass="monki.study.calculator.MainActivity"/>
+        <categories android:name="android.shortcut.conversation"/>
+    </shortcut>
+
+
+</shorcuts>

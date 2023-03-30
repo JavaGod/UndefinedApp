@@ -1,0 +1,9 @@
+<resources>
+    <string name="app_name">UndefinedApp</string>
+    <string name="monki">Monki</string>
+    <string name="first_short">计算器</string>
+    <string name="first_long">计算器</string>
+    <string name="second_long">微信</string>
+    <string name="third_long">我的计算器</string>
+    <string name="reminderText">欢迎登录校园网</string>
+</resources>
