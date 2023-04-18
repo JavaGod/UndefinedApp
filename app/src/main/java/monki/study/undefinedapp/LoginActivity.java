@@ -64,7 +64,7 @@ public class LoginActivity extends AppCompatActivity implements View.OnClickList
     @Override
     protected void onStart() {
         super.onStart();
-        mHelper = UserDBHelper.getInstance(this);
+        mHelper = MyApplication.getInstance().getmDBHelper();
         mHelper.createReadLink();
         mHelper.createWriteLink();
     }

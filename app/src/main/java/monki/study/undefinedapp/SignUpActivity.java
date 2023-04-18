@@ -28,7 +28,7 @@ public class SignUpActivity extends AppCompatActivity implements View.OnClickLis
         et_set_password = findViewById(R.id.et_set_password);
         et_verify_password = findViewById(R.id.et_verify_password);
 
-        mHelper = UserDBHelper.getInstance(this);
+        mHelper = MyApplication.getInstance().getmDBHelper();
         mHelper.createWriteLink();
     }
 
