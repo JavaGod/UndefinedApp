@@ -5,6 +5,7 @@ import android.content.Context;
 import android.database.Cursor;
 import android.database.sqlite.SQLiteDatabase;
 import android.database.sqlite.SQLiteOpenHelper;
+import android.util.Log;
 
 import monki.study.undefinedapp.entity.User;
 
@@ -110,7 +111,21 @@ public class UserDBHelper extends SQLiteOpenHelper {
                  "account=? and password =?",
                 new String[]{account, password}, null, null, null);
         boolean result = cursor.moveToFirst();
+        cursor.close();
         return result;
+    }
+    public String showAllInformation(){
+        StringBuilder inf =new StringBuilder();
+        Cursor cursor = mRDB.query(TABLE_NAME, null, null, null, null, null, null);
+        while (cursor.moveToNext()){
+            inf.append("\nid:"+String.valueOf(cursor.getInt(0))+
+                    "account:"+cursor.getString(1).replace("\n","-->ENTER<--")+
+                    " password:"+cursor.getString(2).replace("\n","-->ENTER<--")+"\n"+
+                    "------------------------------------------\n");
+        }
+        cursor.close();
+        Log.d("Monki", inf.toString());
+        return inf.toString();
     }
 }
 

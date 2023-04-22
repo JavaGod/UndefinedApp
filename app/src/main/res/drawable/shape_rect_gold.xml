@@ -10,7 +10,7 @@
     <!--指定圆角半径-->
     <corners android:radius="10dp"/>
     <gradient android:angle="9"
-        android:startColor="@color/yellow"
+        android:startColor="@color/purple_200"
         android:centerColor="@color/blue_sky"
         android:endColor="@color/purple_200"
         android:type="linear"/>

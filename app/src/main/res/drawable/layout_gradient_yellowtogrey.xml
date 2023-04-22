@@ -9,9 +9,10 @@
         android:color="#aaaaaa"/>
     <!--指定圆角半径-->
     <corners android:radius="10dp"/>
-    <gradient android:angle="6"
-        android:startColor="@color/blue_sky"
-        android:centerColor="@color/yellow"
-        android:endColor="@color/grey"
+    <gradient
+        android:angle="5"
+        android:startColor="@color/white"
+        android:centerColor="@color/grey"
+        android:endColor="@color/blue"
         android:type="linear"/>
 </shape>
